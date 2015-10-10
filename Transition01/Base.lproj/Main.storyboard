@@ -64,12 +64,15 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="igG-bc-ANl" kind="show" id="75m-r2-3jU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1256.5" y="336.5"/>
         </scene>
-        <!--Detail View Controller-->
+        <!--Title-->
         <scene sceneID="vkP-Fy-dgU">
             <objects>
                 <viewController storyboardIdentifier="DV01" id="igG-bc-ANl" customClass="DetailViewController" customModule="Transition01" customModuleProvider="target" sceneMemberID="viewController">
@@ -94,14 +97,28 @@
                                     <action selector="back:" destination="igG-bc-ANl" eventType="touchUpInside" id="Ilc-XY-j5H"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oou-Cx-p0j">
+                                <rect key="frame" x="266" y="184" width="43" height="30"/>
+                                <state key="normal" title="Back2"/>
+                                <connections>
+                                    <action selector="back2:" destination="igG-bc-ANl" eventType="touchUpInside" id="ddz-Vl-X85"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="fFO-rC-ksP">
+                        <barButtonItem key="leftBarButtonItem" systemItem="rewind" id="fuU-p9-RAK">
+                            <connections>
+                                <action selector="back3:" destination="igG-bc-ANl" id="qUz-cK-Lq0"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XpZ-V8-D81" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1662.5" y="372.5"/>
+            <point key="canvasLocation" x="1688.5" y="336.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Qxz-bB-uA3">
