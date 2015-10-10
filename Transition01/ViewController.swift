@@ -20,6 +20,12 @@ class ViewController: UIViewController {
 		// Dispose of any resources that can be recreated.
 	}
 
+	@IBAction func moveNextByNavigator(sender: AnyObject) {
+		if let uvc = self.storyboard?.instantiateViewControllerWithIdentifier("DV01") {
+			self.navigationController?.pushViewController(uvc, animated: true)
+		}
+	}
+	
 	@IBAction func moveNext(sender: AnyObject) {
 		let uvc = self.storyboard?.instantiateViewControllerWithIdentifier("DV01")
 		uvc?.modalTransitionStyle = UIModalTransitionStyle.FlipHorizontal
