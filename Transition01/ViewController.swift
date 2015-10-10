@@ -27,9 +27,10 @@ class ViewController: UIViewController {
 	}
 	
 	@IBAction func moveNext02(sender: AnyObject) {
-		let uvc = self.storyboard?.instantiateViewControllerWithIdentifier("DV01")
-		uvc?.modalTransitionStyle = UIModalTransitionStyle.PartialCurl
-		self.presentViewController(uvc!, animated: true, completion: nil)
+		if let uvc = self.storyboard?.instantiateViewControllerWithIdentifier("DV01") {
+			uvc.modalTransitionStyle = UIModalTransitionStyle.PartialCurl
+			self.presentViewController(uvc, animated: true, completion: nil)
+		}
 	}
 	
 	@IBAction func moveNext03(sender: AnyObject) {
