@@ -10,4 +10,7 @@ import UIKit
 
 class DetailViewController : UIViewController {
 	
+	@IBAction func back(sender: AnyObject) {
+		self.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
+	}
 }
