@@ -20,6 +20,30 @@ class ViewController: UIViewController {
 		// Dispose of any resources that can be recreated.
 	}
 
+	@IBAction func moveNext(sender: AnyObject) {
+		let uvc = self.storyboard?.instantiateViewControllerWithIdentifier("DV01")
+		uvc?.modalTransitionStyle = UIModalTransitionStyle.FlipHorizontal
+		self.presentViewController(uvc!, animated: true, completion: nil)
+	}
+	
+	@IBAction func moveNext02(sender: AnyObject) {
+		let uvc = self.storyboard?.instantiateViewControllerWithIdentifier("DV01")
+		uvc?.modalTransitionStyle = UIModalTransitionStyle.PartialCurl
+		self.presentViewController(uvc!, animated: true, completion: nil)
+	}
+	
+	@IBAction func moveNext03(sender: AnyObject) {
+		let uvc = self.storyboard?.instantiateViewControllerWithIdentifier("DV01")
+		uvc?.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
+		self.presentViewController(uvc!, animated: true, completion: nil)
+	}
+	
+	@IBAction func moveNext04(sender: AnyObject) {
+		let uvc = self.storyboard?.instantiateViewControllerWithIdentifier("DV01")
+		uvc?.modalTransitionStyle = UIModalTransitionStyle.CoverVertical
+		self.presentViewController(uvc!, animated: true, completion: nil)
+	}
+	
 
 }
 
